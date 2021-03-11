@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'com.arun'
+//version '1.0'
+
+repositories {
+    maven { url 'https://www.nexus.ford.com/repository/external-proxy-group' }
+    maven { url 'https://www.nexus.ford.com/repository/public' }
+}
+
+dependencies {
+    implementation 'org.springframework.cloud:spring-cloud-function-adapter-gcp:3.1.1'
+    implementation 'org.springframework.cloud:spring-cloud-starter-function-web:3.1.1'
+}
